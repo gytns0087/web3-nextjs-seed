@@ -33,15 +33,11 @@ export default () => (
 					<a>Code</a>
 				</Link>
 			</li>
-<<<<<<< HEAD
-=======
 			<li>
 				<Link href="/klaytn">
 					<a>Klaytn</a>
 				</Link>
 			</li>
-
->>>>>>> upstream/master
 		</ul>
 	</>
 );

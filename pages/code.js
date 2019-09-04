@@ -28,33 +28,9 @@ const User = ({ user }) => {
 	return <div>Name: {user.name}</div>;
 };
 
-
-<<<<<<< HEAD
 const UserListContainer = props => {
 	const [users, setUsers] = useState([]);
 
-	function onInputChangeHandle(values) {
-		console.log('onInputChangeHandle', values);
-
-		// ...users는
-		// const newUser = [];
-		// for(const user in users) {
-		// 		newUser.push()
-		// }
-		// newUser.push(values);
-		// 와 같다.
-=======
-
-
-
-// setUsers([...users, values]);
-
-const UserListContainer = props => {
-	const [users, setUsers] = useState([]);
-
-	// useEffect(() => {});
-	//
-	// const ref = useRef();
 	function onInputChangeHandle(values) {
 		console.log('onInputChangeHandle', values);
 
@@ -63,18 +39,14 @@ const UserListContainer = props => {
 		// 	newUser.push(user);
 		// }
 		// newUser.push(values);
->>>>>>> upstream/master
 
 		setUsers([...users, values]);
 	}
 
-<<<<<<< HEAD
 	// useEffect(() => {});
 	//
 	// const ref = useRef();
 
-=======
->>>>>>> upstream/master
 	return (
 		<>
 			<NewUserInput onSubmit={onInputChangeHandle} />
@@ -83,8 +55,4 @@ const UserListContainer = props => {
 	);
 };
 
-<<<<<<< HEAD
 export default UserListContainer;
-=======
-export default UserListContainer;
->>>>>>> upstream/master
