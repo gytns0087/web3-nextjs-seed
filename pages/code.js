@@ -29,6 +29,7 @@ const User = ({ user }) => {
 };
 
 
+<<<<<<< HEAD
 const UserListContainer = props => {
 	const [users, setUsers] = useState([]);
 
@@ -42,14 +43,38 @@ const UserListContainer = props => {
 		// }
 		// newUser.push(values);
 		// 와 같다.
+=======
 
-		setUsers([...users, values]);
-	}
+
+
+// setUsers([...users, values]);
+
+const UserListContainer = props => {
+	const [users, setUsers] = useState([]);
 
 	// useEffect(() => {});
 	//
 	// const ref = useRef();
+	function onInputChangeHandle(values) {
+		console.log('onInputChangeHandle', values);
 
+		// const newUser = [];
+		// for( const user in users) {
+		// 	newUser.push(user);
+		// }
+		// newUser.push(values);
+>>>>>>> upstream/master
+
+		setUsers([...users, values]);
+	}
+
+<<<<<<< HEAD
+	// useEffect(() => {});
+	//
+	// const ref = useRef();
+
+=======
+>>>>>>> upstream/master
 	return (
 		<>
 			<NewUserInput onSubmit={onInputChangeHandle} />
@@ -58,4 +83,8 @@ const UserListContainer = props => {
 	);
 };
 
+<<<<<<< HEAD
 export default UserListContainer;
+=======
+export default UserListContainer;
+>>>>>>> upstream/master
