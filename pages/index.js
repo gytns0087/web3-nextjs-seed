@@ -44,6 +44,11 @@ export default () => (
 					<a>Mint Cards</a>
 				</Link>
 			</li>
+			<li>
+				<Link href="/HYOCard">
+					<a>HYO Cards</a>
+				</Link>
+			</li>
 		</ul>
 	</>
 );
