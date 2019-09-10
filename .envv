@@ -1,0 +1,3 @@
+KLAYTN_PRIVATE_KEY=0x55a3f6972beb31bdccb4684c89b942ac7b376172214c3e23f963f77881fdf3d6
+CONTRACT_ABI_JSON=https://scv.blob.core.windows.net/scvcontainer/artifacts/contracts/SCVCard/1568014042434/abi.json
+CONTRACT_ADDRESS_JSON=https://scv.blob.core.windows.net/scvcontainer/artifacts/contracts/SCVCard/1568014042434/addressFile.json
