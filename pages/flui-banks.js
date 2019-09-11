@@ -32,6 +32,15 @@ function transfer({ contract, to, amount, from }) {
 function getBalance({ contract, from }) {
 	return contract.methods.getBalance(amount).send({ from, gas: '300000' });
 }
+function withdraw({amount, from}) {
+
+}
+function transfer({to, amount, from}) {
+
+}
+function getBalance({from}) {
+
+}
 
 const FLUIBank = ({ privateKey, abi, contractAddress }) => {
 	const context = useCaver();

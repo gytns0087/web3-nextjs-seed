@@ -28,14 +28,9 @@ const User = ({ user }) => {
 	return <div>Name: {user.name}</div>;
 };
 
-// setUsers([...users, values]);
-
 const UserListContainer = props => {
 	const [users, setUsers] = useState([]);
 
-	// useEffect(() => {});
-	//
-	// const ref = useRef();
 	function onInputChangeHandle(values) {
 		console.log('onInputChangeHandle', values);
 
@@ -47,6 +42,10 @@ const UserListContainer = props => {
 
 		setUsers([...users, { ...values, id: new Date().getTime() }]);
 	}
+
+	// useEffect(() => {});
+	//
+	// const ref = useRef();
 
 	return (
 		<>
