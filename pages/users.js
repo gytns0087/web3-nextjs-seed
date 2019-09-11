@@ -28,11 +28,6 @@ const User = ({ user }) => {
 	return <div>Name: {user.name}</div>;
 };
 
-<<<<<<< HEAD:pages/code.js
-=======
-// setUsers([...users, values]);
-
->>>>>>> upstream/master:pages/users.js
 const UserListContainer = props => {
 	const [users, setUsers] = useState([]);
 
