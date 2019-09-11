@@ -23,14 +23,6 @@ function getCardCount({ contract, from }) {
 	return contract.methods.getCardCount().call();
 }
 
-<<<<<<< HEAD
-function executeMintCard({ contract, name, address, balance, from }) {
-=======
-function executeMintCard({ contract, name, balance, address, from }) {
->>>>>>> upstream/master
-	return contract.methods.mintCard(name, balance, address).send({ from, gas: '300000' });
-}
-
 function getCard(contract, index) {
 	try {
 		console.log('getCard: ', index);
@@ -95,12 +87,6 @@ const MintableCard = ({ abi, contractAddress }) => {
 			updateCard(contract, count - 1, setCurrentCard);
 		});
 	}, [contract]);
-
-<<<<<<< HEAD
-	// {name: string, address: string, balance: number}
-=======
-	// { name: string, address: string, balance: number }
->>>>>>> upstream/master
 	async function onSubmit(values) {
 		console.log('onSubmit');
 		if (context === null) {
@@ -110,16 +96,6 @@ const MintableCard = ({ abi, contractAddress }) => {
 
 		const provider = context.getProvider();
 		const { toPeb } = context.getUtils();
-
-<<<<<<< HEAD
-		const { name, address } = values;
-		// const balance = 1;
-=======
-		const { name, balance, address } = values;
-		// const balance = 1;
-		// const balance = process.env.BLANCE;
->>>>>>> upstream/master
-
 		const transaction = await executeMintCard({
 			contract,
 			name,

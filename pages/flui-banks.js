@@ -16,6 +16,15 @@ const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
 function deposit({ contract, amount, from }) {
 	return contract.methods.mintCard(amount).send({ from, gas: '300000' });
 }
+function withdraw({amount, from}) {
+
+}
+function transfer({to, amount, from}) {
+
+}
+function getBalance({from}) {
+
+}
 
 const FLUIBank = ({ privateKey, abi, contractAddress }) => {
 	const context = useCaver();
