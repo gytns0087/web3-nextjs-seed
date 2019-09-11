@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Form, Input, InputNumber } from 'antd';
 
-class NewCardInputComp extends React.Component {
+class DepositInputComp extends React.Component {
 	onInputChangeHandle = e => {
 		e.preventDefault();
 		this.props.form.validateFields((err, values) => {
@@ -16,11 +16,7 @@ class NewCardInputComp extends React.Component {
 
 		return (
 			<Form layout="vertical" onSubmit={this.onInputChangeHandle} style={{ marginTop: 32 }}>
-				<Form.Item>{getFieldDecorator('name', {})(<Input placeholder="Name" />)}</Form.Item>
-
-				<Form.Item>
-					{getFieldDecorator('balance', {})(<InputNumber placeholder="Balance" />)}
-				</Form.Item>
+				<Form.Item>{getFieldDecorator('amount', {})(<Input placeholder="Amount" />)}</Form.Item>
 
 				<Form.Item>
 					{getFieldDecorator('address', {})(<Input placeholder="Address" />)}
@@ -34,6 +30,6 @@ class NewCardInputComp extends React.Component {
 	}
 }
 
-const NewCardInput = Form.create()(NewCardInputComp);
+const DepositInput = Form.create()(DepositInputComp);
 
-export default NewCardInput;
+export default DepositInput;

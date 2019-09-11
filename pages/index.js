@@ -52,10 +52,23 @@ export default () => (
 			</li>
 
 			<li>
+				<Link href="/flui-cards">
+					<a>FLUI Cards</a>
+				</Link>
+			</li>
+
+			<li>
 				<Link href="/getInitialProps">
 					<a>getInitialProps</a>
 				</Link>
 			</li>
+
+			<li>
+				<Link href="/flui-banks">
+					<a>FLUI Banks</a>
+				</Link>
+			</li>
+
 		</ul>
 	</>
 );
